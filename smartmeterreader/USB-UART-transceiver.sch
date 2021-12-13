@@ -1,0 +1,217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4700 2800 0    50   Input ~ 0
+D+
+Text HLabel 4700 2900 0    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR?
+U 1 1 61BC75D0
+P 5450 3450
+F 0 "#PWR?" H 5450 3200 50  0001 C CNN
+F 1 "GND" H 5455 3277 50  0000 C CNN
+F 2 "" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3450 5450 3300
+Wire Wire Line
+	5550 3300 5450 3300
+$Comp
+L Capacitor_Ceramic_SMD_0603:4.7uF C?
+U 1 1 61BCA7FF
+P 4050 2550
+F 0 "C?" H 4165 2596 50  0000 L CNN
+F 1 "4.7uF" H 4165 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 2400 50  0001 C CNN
+F 3 "~" H 4050 2550 50  0001 C CNN
+F 4 "GRM219R6YA475MA73D" H 4050 2550 50  0001 C CNN "MPN"
+F 5 "Murata" H 4050 2550 50  0001 C CNN "Manufacturer"
+F 6 "4.7uF 10% 35V X5R 0805" H 4050 2550 50  0001 C CNN "Description"
+F 7 "1" H 4050 2550 50  0001 C CNN "Generic"
+F 8 "NI" H 4050 2550 50  0001 C CNN "Installed"
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2800 4850 2800
+Connection ~ 5450 3300
+$Comp
+L Interface_USB:CP2102N-A01-GQFN24 U?
+U 1 1 61BC6533
+P 5450 2400
+F 0 "U?" H 5050 3200 50  0000 C CNN
+F 1 " CP2102N-A02-GQFN20R" H 5950 3200 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5900 1600 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5500 1350 50  0001 C CNN
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2900 4850 2900
+$Comp
+L Capacitor_Ceramic_SMD_0603:100nF C?
+U 1 1 61BCFFBD
+P 3600 2550
+F 0 "C?" H 3715 2596 50  0000 L CNN
+F 1 "100nF" H 3715 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 2400 50  0001 C CNN
+F 3 "~" H 3600 2550 50  0001 C CNN
+F 4 "CGA3E2X7R1H104K080AA" H 3600 2550 50  0001 C CNN "MPN"
+F 5 "TDK" H 3600 2550 50  0001 C CNN "Manufacturer"
+F 6 "100nF 10% 50V X7R 0603" H 3600 2550 50  0001 C CNN "Description"
+F 7 "1" H 3600 2550 50  0001 C CNN "Generic"
+F 8 "1" H 3600 2550 50  0001 C CNN "Populate"
+F 9 "NI" H 3600 2550 50  0001 C CNN "Installed"
+	1    3600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2400 4050 2400
+Connection ~ 4050 2400
+Wire Wire Line
+	4050 2400 4850 2400
+$Comp
+L power:GND #PWR?
+U 1 1 61BD0948
+P 3600 2850
+F 0 "#PWR?" H 3600 2600 50  0001 C CNN
+F 1 "GND" H 3605 2677 50  0000 C CNN
+F 2 "" H 3600 2850 50  0001 C CNN
+F 3 "" H 3600 2850 50  0001 C CNN
+	1    3600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BD0D49
+P 4050 2850
+F 0 "#PWR?" H 4050 2600 50  0001 C CNN
+F 1 "GND" H 4055 2677 50  0000 C CNN
+F 2 "" H 4050 2850 50  0001 C CNN
+F 3 "" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2850 4050 2700
+$Comp
+L Capacitor_Ceramic_SMD_0603:100nF C?
+U 1 1 61BD3E9D
+P 3600 1400
+F 0 "C?" H 3715 1446 50  0000 L CNN
+F 1 "100nF" H 3715 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 1250 50  0001 C CNN
+F 3 "~" H 3600 1400 50  0001 C CNN
+F 4 "CGA3E2X7R1H104K080AA" H 3600 1400 50  0001 C CNN "MPN"
+F 5 "TDK" H 3600 1400 50  0001 C CNN "Manufacturer"
+F 6 "100nF 10% 50V X7R 0603" H 3600 1400 50  0001 C CNN "Description"
+F 7 "1" H 3600 1400 50  0001 C CNN "Generic"
+F 8 "1" H 3600 1400 50  0001 C CNN "Populate"
+F 9 "NI" H 3600 1400 50  0001 C CNN "Installed"
+	1    3600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_Ceramic_SMD_0603:4.7uF C?
+U 1 1 61BD57A3
+P 4050 1400
+F 0 "C?" H 4165 1446 50  0000 L CNN
+F 1 "4.7uF" H 4165 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 1250 50  0001 C CNN
+F 3 "~" H 4050 1400 50  0001 C CNN
+F 4 "GRM219R6YA475MA73D" H 4050 1400 50  0001 C CNN "MPN"
+F 5 "Murata" H 4050 1400 50  0001 C CNN "Manufacturer"
+F 6 "4.7uF 10% 35V X5R 0805" H 4050 1400 50  0001 C CNN "Description"
+F 7 "1" H 4050 1400 50  0001 C CNN "Generic"
+F 8 "NI" H 4050 1400 50  0001 C CNN "Installed"
+	1    4050 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1250 4050 1250
+Wire Wire Line
+	5350 1250 5350 1500
+Connection ~ 4050 1250
+Wire Wire Line
+	4050 1250 5350 1250
+Wire Wire Line
+	3600 2700 3600 2850
+$Comp
+L power:GND #PWR?
+U 1 1 61BD6609
+P 3600 1700
+F 0 "#PWR?" H 3600 1450 50  0001 C CNN
+F 1 "GND" H 3605 1527 50  0000 C CNN
+F 2 "" H 3600 1700 50  0001 C CNN
+F 3 "" H 3600 1700 50  0001 C CNN
+	1    3600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BD68FD
+P 4050 1700
+F 0 "#PWR?" H 4050 1450 50  0001 C CNN
+F 1 "GND" H 4055 1527 50  0000 C CNN
+F 2 "" H 4050 1700 50  0001 C CNN
+F 3 "" H 4050 1700 50  0001 C CNN
+	1    4050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1700 4050 1550
+Wire Wire Line
+	3600 1700 3600 1550
+$Comp
+L Resistor_SMD_0603:1K R?
+U 1 1 61BD787D
+P 4650 1550
+F 0 "R?" H 4720 1596 50  0000 L CNN
+F 1 "1K" H 4720 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 1550 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" H 4650 1550 50  0001 C CNN
+F 4 "1K 1% 100ppm 0603" H 4650 1550 50  0001 C CNN "Description"
+F 5 "1" H 4650 1550 50  0001 C CNN "Populate"
+F 6 "1" H 4650 1550 50  0001 C CNN "Generic"
+F 7 "NI" H 4650 1550 50  0001 C CNN "Installed"
+F 8 "CRCW06031K00FKEAC" H 4650 1550 50  0001 C CNN "MPN"
+F 9 "Vishay" H 4650 1550 50  0001 C CNN "Manufacturer"
+	1    4650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1800 4650 1800
+Wire Wire Line
+	4650 1800 4650 1700
+Wire Wire Line
+	4650 1400 5450 1400
+Wire Wire Line
+	5450 1400 5450 1500
+Text HLabel 3100 2400 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	3100 2400 3600 2400
+Connection ~ 3600 2400
+Text Label 4550 2700 0    50   ~ 0
+Vbus
+Wire Wire Line
+	4550 2700 4850 2700
+Text Label 3700 1250 0    50   ~ 0
+V3.3
+$EndSCHEMATC

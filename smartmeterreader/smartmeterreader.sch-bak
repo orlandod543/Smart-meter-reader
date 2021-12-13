@@ -1,0 +1,61 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Smart meter reader to Wifi"
+Date "2021-12-13"
+Rev "V1"
+Comp "ODiaz"
+Comment1 "Orlando Diaz"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Espressif:ESP8266EX U?
+U 1 1 61B92E20
+P 5800 3650
+F 0 "U?" H 5800 2461 50  0000 C CNN
+F 1 "ESP8266EX" H 5800 2370 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 5800 2350 50  0001 C CNN
+F 3 "http://espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf" H 5900 2350 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4250 1550 1250 550 
+U 61B941DC
+F0 "Sheet61B941DB" 50
+F1 "USB-UART-transceiver.sch" 50
+$EndSheet
+$Sheet
+S 3200 1400 500  650 
+U 61B942F8
+F0 "Sheet61B942F7" 50
+F1 "Power_supply.sch" 50
+$EndSheet
+$Comp
+L Connector:6P6C J?
+U 1 1 61B95CB6
+P 7600 2200
+F 0 "J?" H 7657 2767 50  0000 C CNN
+F 1 "6P6C" H 7657 2676 50  0000 C CNN
+F 2 "" V 7600 2225 50  0001 C CNN
+F 3 "~" V 7600 2225 50  0001 C CNN
+	1    7600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 61B97895
+P 1600 3950
+F 0 "J?" H 1657 4417 50  0000 C CNN
+F 1 "USB_B_Micro" H 1657 4326 50  0000 C CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "~" H 1750 3900 50  0001 C CNN
+	1    1600 3950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
