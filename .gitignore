@@ -1,0 +1,9 @@
+*.swp
+.~lock*
+*.log
+
+*.sch-bak
+_autosave*
+-cache*
+*-cache*
+*.kicad_pcb-bak
