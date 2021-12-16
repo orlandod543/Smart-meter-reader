@@ -1,4 +1,4 @@
-update=22/05/2015 07:44:53
+update=Thu 16 Dec 2021 09:25:06 AM CET
 version=1
 last_client=kicad
 [general]
@@ -31,3 +31,13 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/orlando/workspace/git/KicadLibsPersonal/Templates/Schematic tempaltes/A4_Asaurus/.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=98
+ERC_TestSimilarLabels=1

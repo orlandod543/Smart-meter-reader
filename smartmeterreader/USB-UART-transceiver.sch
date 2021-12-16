@@ -3,215 +3,366 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
-Title ""
+Sheet 2 5
+Title "USB-UART Transceiver"
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Rev "V1"
+Comp "ODiaz"
+Comment1 "Orlando Diaz"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4700 2800 0    50   Input ~ 0
+Text HLabel 4950 4150 0    50   Input ~ 0
 D+
-Text HLabel 4700 2900 0    50   Input ~ 0
+Text HLabel 4950 4250 0    50   Input ~ 0
 D-
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 61BC75D0
-P 5450 3450
-F 0 "#PWR?" H 5450 3200 50  0001 C CNN
-F 1 "GND" H 5455 3277 50  0000 C CNN
-F 2 "" H 5450 3450 50  0001 C CNN
-F 3 "" H 5450 3450 50  0001 C CNN
-	1    5450 3450
+P 5750 4800
+F 0 "#PWR017" H 5750 4550 50  0001 C CNN
+F 1 "GND" H 5755 4627 50  0000 C CNN
+F 2 "" H 5750 4800 50  0001 C CNN
+F 3 "" H 5750 4800 50  0001 C CNN
+	1    5750 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 3450 5450 3300
+	5750 4800 5750 4650
 Wire Wire Line
-	5550 3300 5450 3300
+	5850 4650 5750 4650
+Wire Wire Line
+	4950 4150 5100 4150
+Wire Wire Line
+	4950 4250 5100 4250
 $Comp
-L Capacitor_Ceramic_SMD_0603:4.7uF C?
-U 1 1 61BCA7FF
-P 4050 2550
-F 0 "C?" H 4165 2596 50  0000 L CNN
-F 1 "4.7uF" H 4165 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 2400 50  0001 C CNN
-F 3 "~" H 4050 2550 50  0001 C CNN
-F 4 "GRM219R6YA475MA73D" H 4050 2550 50  0001 C CNN "MPN"
-F 5 "Murata" H 4050 2550 50  0001 C CNN "Manufacturer"
-F 6 "4.7uF 10% 35V X5R 0805" H 4050 2550 50  0001 C CNN "Description"
-F 7 "1" H 4050 2550 50  0001 C CNN "Generic"
-F 8 "NI" H 4050 2550 50  0001 C CNN "Installed"
-	1    4050 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 2800 4850 2800
-Connection ~ 5450 3300
-$Comp
-L Interface_USB:CP2102N-A01-GQFN24 U?
-U 1 1 61BC6533
-P 5450 2400
-F 0 "U?" H 5050 3200 50  0000 C CNN
-F 1 " CP2102N-A02-GQFN20R" H 5950 3200 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5900 1600 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5500 1350 50  0001 C CNN
-	1    5450 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 2900 4850 2900
-$Comp
-L Capacitor_Ceramic_SMD_0603:100nF C?
-U 1 1 61BCFFBD
-P 3600 2550
-F 0 "C?" H 3715 2596 50  0000 L CNN
-F 1 "100nF" H 3715 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 2400 50  0001 C CNN
-F 3 "~" H 3600 2550 50  0001 C CNN
-F 4 "CGA3E2X7R1H104K080AA" H 3600 2550 50  0001 C CNN "MPN"
-F 5 "TDK" H 3600 2550 50  0001 C CNN "Manufacturer"
-F 6 "100nF 10% 50V X7R 0603" H 3600 2550 50  0001 C CNN "Description"
-F 7 "1" H 3600 2550 50  0001 C CNN "Generic"
-F 8 "1" H 3600 2550 50  0001 C CNN "Populate"
-F 9 "NI" H 3600 2550 50  0001 C CNN "Installed"
-	1    3600 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 2400 4050 2400
-Connection ~ 4050 2400
-Wire Wire Line
-	4050 2400 4850 2400
-$Comp
-L power:GND #PWR?
-U 1 1 61BD0948
-P 3600 2850
-F 0 "#PWR?" H 3600 2600 50  0001 C CNN
-F 1 "GND" H 3605 2677 50  0000 C CNN
-F 2 "" H 3600 2850 50  0001 C CNN
-F 3 "" H 3600 2850 50  0001 C CNN
-	1    3600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61BD0D49
-P 4050 2850
-F 0 "#PWR?" H 4050 2600 50  0001 C CNN
-F 1 "GND" H 4055 2677 50  0000 C CNN
-F 2 "" H 4050 2850 50  0001 C CNN
-F 3 "" H 4050 2850 50  0001 C CNN
-	1    4050 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2850 4050 2700
-$Comp
-L Capacitor_Ceramic_SMD_0603:100nF C?
-U 1 1 61BD3E9D
-P 3600 1400
-F 0 "C?" H 3715 1446 50  0000 L CNN
-F 1 "100nF" H 3715 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3638 1250 50  0001 C CNN
-F 3 "~" H 3600 1400 50  0001 C CNN
-F 4 "CGA3E2X7R1H104K080AA" H 3600 1400 50  0001 C CNN "MPN"
-F 5 "TDK" H 3600 1400 50  0001 C CNN "Manufacturer"
-F 6 "100nF 10% 50V X7R 0603" H 3600 1400 50  0001 C CNN "Description"
-F 7 "1" H 3600 1400 50  0001 C CNN "Generic"
-F 8 "1" H 3600 1400 50  0001 C CNN "Populate"
-F 9 "NI" H 3600 1400 50  0001 C CNN "Installed"
-	1    3600 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Capacitor_Ceramic_SMD_0603:4.7uF C?
-U 1 1 61BD57A3
-P 4050 1400
-F 0 "C?" H 4165 1446 50  0000 L CNN
-F 1 "4.7uF" H 4165 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 1250 50  0001 C CNN
-F 3 "~" H 4050 1400 50  0001 C CNN
-F 4 "GRM219R6YA475MA73D" H 4050 1400 50  0001 C CNN "MPN"
-F 5 "Murata" H 4050 1400 50  0001 C CNN "Manufacturer"
-F 6 "4.7uF 10% 35V X5R 0805" H 4050 1400 50  0001 C CNN "Description"
-F 7 "1" H 4050 1400 50  0001 C CNN "Generic"
-F 8 "NI" H 4050 1400 50  0001 C CNN "Installed"
-	1    4050 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 1250 4050 1250
-Wire Wire Line
-	5350 1250 5350 1500
-Connection ~ 4050 1250
-Wire Wire Line
-	4050 1250 5350 1250
-Wire Wire Line
-	3600 2700 3600 2850
-$Comp
-L power:GND #PWR?
-U 1 1 61BD6609
-P 3600 1700
-F 0 "#PWR?" H 3600 1450 50  0001 C CNN
-F 1 "GND" H 3605 1527 50  0000 C CNN
-F 2 "" H 3600 1700 50  0001 C CNN
-F 3 "" H 3600 1700 50  0001 C CNN
-	1    3600 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61BD68FD
-P 4050 1700
-F 0 "#PWR?" H 4050 1450 50  0001 C CNN
-F 1 "GND" H 4055 1527 50  0000 C CNN
-F 2 "" H 4050 1700 50  0001 C CNN
-F 3 "" H 4050 1700 50  0001 C CNN
-	1    4050 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 1700 4050 1550
-Wire Wire Line
-	3600 1700 3600 1550
-$Comp
-L Resistor_SMD_0603:1K R?
+L Resistor_SMD_0603:1K R8
 U 1 1 61BD787D
-P 4650 1550
-F 0 "R?" H 4720 1596 50  0000 L CNN
-F 1 "1K" H 4720 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 1550 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" H 4650 1550 50  0001 C CNN
-F 4 "1K 1% 100ppm 0603" H 4650 1550 50  0001 C CNN "Description"
-F 5 "1" H 4650 1550 50  0001 C CNN "Populate"
-F 6 "1" H 4650 1550 50  0001 C CNN "Generic"
-F 7 "NI" H 4650 1550 50  0001 C CNN "Installed"
-F 8 "CRCW06031K00FKEAC" H 4650 1550 50  0001 C CNN "MPN"
-F 9 "Vishay" H 4650 1550 50  0001 C CNN "Manufacturer"
-	1    4650 1550
+P 4900 2800
+F 0 "R8" H 4970 2846 50  0000 L CNN
+F 1 "1K" V 4900 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 2800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" H 4900 2800 50  0001 C CNN
+F 4 "1K 1% 100ppm 0603" H 4900 2800 50  0001 C CNN "Description"
+F 5 "1" H 4900 2800 50  0001 C CNN "Populate"
+F 6 "1" H 4900 2800 50  0001 C CNN "Generic"
+F 7 "NI" H 4900 2800 50  0001 C CNN "Installed"
+F 8 "CRCW06031K00FKEAC" H 4900 2800 50  0001 C CNN "MPN"
+F 9 "Vishay" H 4900 2800 50  0001 C CNN "Manufacturer"
+	1    4900 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 1800 4650 1800
-Wire Wire Line
-	4650 1800 4650 1700
-Wire Wire Line
-	4650 1400 5450 1400
-Wire Wire Line
-	5450 1400 5450 1500
-Text HLabel 3100 2400 0    50   Input ~ 0
+	5100 3150 4900 3150
+Text HLabel 3350 3750 0    50   Input ~ 0
 VBUS
+Text Notes 550  600  0    50   ~ 0
+Use a USB-RS232 with DTR and RTS signal to implement an self reboot on the ESP32 according to this document https://tttapa.github.io/ESP8266/Chap06%20-%20Uploading.html
+$Comp
+L IC_Digital:CP2102N-A02-GQFN24 U2
+U 1 1 61BE34CB
+P 5800 3750
+F 0 "U2" H 5300 4550 50  0000 C CNN
+F 1 "CP2102N-A02-GQFN24" H 6300 4550 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6400 2950 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 5850 2700 50  0001 C CNN
+F 4 "Silicon Labs" H 5950 3750 50  0001 C CNN "Manufacturer"
+F 5 "USB to UART master bridge, QFN-24" H 5700 3750 50  0001 C CNN "Description"
+F 6 "CP2102N-A02-GQFN24" H 5950 3750 50  0001 C CNN "MPN"
+F 7 "NI" H 5950 3750 50  0001 C CNN "Installed"
+F 8 "No" H 5950 3750 50  0001 C CNN "Generic"
+F 9 "No" H 5950 3750 50  0001 C CNN "Reviewed"
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4650
+Connection ~ 3850 3750
 Wire Wire Line
-	3100 2400 3600 2400
-Connection ~ 3600 2400
-Text Label 4550 2700 0    50   ~ 0
-Vbus
+	3350 3750 3850 3750
 Wire Wire Line
-	4550 2700 4850 2700
-Text Label 3700 1250 0    50   ~ 0
-V3.3
+	3850 4050 3850 4200
+Wire Wire Line
+	4300 4200 4300 4050
+$Comp
+L power:GND #PWR014
+U 1 1 61BD0D49
+P 4300 4200
+F 0 "#PWR014" H 4300 3950 50  0001 C CNN
+F 1 "GND" H 4305 4027 50  0000 C CNN
+F 2 "" H 4300 4200 50  0001 C CNN
+F 3 "" H 4300 4200 50  0001 C CNN
+	1    4300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 61BD0948
+P 3850 4200
+F 0 "#PWR013" H 3850 3950 50  0001 C CNN
+F 1 "GND" H 3855 4027 50  0000 C CNN
+F 2 "" H 3850 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3750 4800 3750
+Connection ~ 4300 3750
+Wire Wire Line
+	3850 3750 4300 3750
+$Comp
+L Capacitor_Ceramic_SMD_0603:100nF C3
+U 1 1 61BCFFBD
+P 3850 3900
+F 0 "C3" H 3965 3946 50  0000 L CNN
+F 1 "100nF" H 3965 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 3750 50  0001 C CNN
+F 3 "~" H 3850 3900 50  0001 C CNN
+F 4 "CGA3E2X7R1H104K080AA" H 3850 3900 50  0001 C CNN "MPN"
+F 5 "TDK" H 3850 3900 50  0001 C CNN "Manufacturer"
+F 6 "100nF 10% 50V X7R 0603" H 3850 3900 50  0001 C CNN "Description"
+F 7 "1" H 3850 3900 50  0001 C CNN "Generic"
+F 8 "1" H 3850 3900 50  0001 C CNN "Populate"
+F 9 "NI" H 3850 3900 50  0001 C CNN "Installed"
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_Ceramic_SMD_0603:4.7uF C4
+U 1 1 61BCA7FF
+P 4300 3900
+F 0 "C4" H 4415 3946 50  0000 L CNN
+F 1 "4.7uF" H 4415 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4338 3750 50  0001 C CNN
+F 3 "~" H 4300 3900 50  0001 C CNN
+F 4 "GRM219R6YA475MA73D" H 4300 3900 50  0001 C CNN "MPN"
+F 5 "Murata" H 4300 3900 50  0001 C CNN "Manufacturer"
+F 6 "4.7uF 10% 35V X5R 0805" H 4300 3900 50  0001 C CNN "Description"
+F 7 "1" H 4300 3900 50  0001 C CNN "Generic"
+F 8 "NI" H 4300 3900 50  0001 C CNN "Installed"
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_Ceramic_SMD_0603:100nF C5
+U 1 1 61BFD232
+P 5300 2500
+F 0 "C5" H 5200 2600 50  0000 L CNN
+F 1 "100nF" H 5050 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5338 2350 50  0001 C CNN
+F 3 "~" H 5300 2500 50  0001 C CNN
+F 4 "CGA3E2X7R1H104K080AA" H 5300 2500 50  0001 C CNN "MPN"
+F 5 "TDK" H 5300 2500 50  0001 C CNN "Manufacturer"
+F 6 "100nF 10% 50V X7R 0603" H 5300 2500 50  0001 C CNN "Description"
+F 7 "1" H 5300 2500 50  0001 C CNN "Generic"
+F 8 "1" H 5300 2500 50  0001 C CNN "Populate"
+F 9 "NI" H 5300 2500 50  0001 C CNN "Installed"
+	1    5300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_Ceramic_SMD_0603:4.7uF C6
+U 1 1 61BFD837
+P 5600 2500
+F 0 "C6" H 5500 2600 50  0000 L CNN
+F 1 "4.7uF" H 5400 2350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5638 2350 50  0001 C CNN
+F 3 "~" H 5600 2500 50  0001 C CNN
+F 4 "GRM219R6YA475MA73D" H 5600 2500 50  0001 C CNN "MPN"
+F 5 "Murata" H 5600 2500 50  0001 C CNN "Manufacturer"
+F 6 "4.7uF 10% 35V X5R 0805" H 5600 2500 50  0001 C CNN "Description"
+F 7 "1" H 5600 2500 50  0001 C CNN "Generic"
+F 8 "NI" H 5600 2500 50  0001 C CNN "Installed"
+	1    5600 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2350 5600 2350
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2350 5300 2350
+$Comp
+L power:GND #PWR015
+U 1 1 61BFF833
+P 5300 2650
+F 0 "#PWR015" H 5300 2400 50  0001 C CNN
+F 1 "GND" H 5305 2477 50  0000 C CNN
+F 2 "" H 5300 2650 50  0001 C CNN
+F 3 "" H 5300 2650 50  0001 C CNN
+	1    5300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 61BFFCFB
+P 5600 2650
+F 0 "#PWR016" H 5600 2400 50  0001 C CNN
+F 1 "GND" H 5605 2477 50  0000 C CNN
+F 2 "" H 5600 2650 50  0001 C CNN
+F 3 "" H 5600 2650 50  0001 C CNN
+	1    5600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2350 5750 2850
+Text Label 5400 2350 0    50   ~ 0
+3.3V
+Wire Wire Line
+	5850 2350 5750 2350
+Connection ~ 5750 2350
+Wire Wire Line
+	4900 2950 4900 3150
+Wire Wire Line
+	4900 2650 4900 2350
+Wire Wire Line
+	4900 2350 5300 2350
+Connection ~ 5300 2350
+Wire Wire Line
+	5850 2350 5850 2850
+Wire Wire Line
+	5100 4050 4800 4050
+Wire Wire Line
+	4800 4050 4800 3750
+Connection ~ 4800 3750
+Wire Wire Line
+	4800 3750 5100 3750
+$Comp
+L OPTO_LED_0603:Green D6
+U 1 1 61C1D799
+P 7600 5250
+F 0 "D6" H 7593 5375 50  0000 C CNN
+F 1 "Green" H 7600 5150 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7600 5250 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 7600 5250 50  0001 C CNN
+F 4 "LED Green 20mA 2V" H 7600 5250 50  0001 C CNN "Description"
+F 5 "Würth Elektronik" H 7600 5250 50  0001 C CNN "Manufacturer"
+F 6 "150060VS75000" H 7600 5250 50  0001 C CNN "MPN"
+F 7 "NI" H 7600 5250 50  0001 C CNN "Installed"
+F 8 "0" H 7600 5250 50  0001 C CNN "Generic"
+F 9 "Yes" H 7600 5250 50  0001 C CNN "Reviewed"
+	1    7600 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OPTO_LED_0603:Green D5
+U 1 1 61C1E746
+P 7150 5250
+F 0 "D5" H 7143 5375 50  0000 C CNN
+F 1 "Green" H 7150 5150 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7150 5250 50  0001 C CNN
+F 3 "https://katalog.we-online.de/led/datasheet/150060VS75000.pdf" H 7150 5250 50  0001 C CNN
+F 4 "LED Green 20mA 2V" H 7150 5250 50  0001 C CNN "Description"
+F 5 "Würth Elektronik" H 7150 5250 50  0001 C CNN "Manufacturer"
+F 6 "150060VS75000" H 7150 5250 50  0001 C CNN "MPN"
+F 7 "NI" H 7150 5250 50  0001 C CNN "Installed"
+F 8 "0" H 7150 5250 50  0001 C CNN "Generic"
+F 9 "Yes" H 7150 5250 50  0001 C CNN "Reviewed"
+	1    7150 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistor_SMD_0603:1K R10
+U 1 1 61C2122B
+P 7600 4850
+F 0 "R10" H 7670 4896 50  0000 L CNN
+F 1 "1K" V 7600 4800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7530 4850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" H 7600 4850 50  0001 C CNN
+F 4 "1K 1% 100ppm 0603" H 7600 4850 50  0001 C CNN "Description"
+F 5 "1" H 7600 4850 50  0001 C CNN "Populate"
+F 6 "1" H 7600 4850 50  0001 C CNN "Generic"
+F 7 "NI" H 7600 4850 50  0001 C CNN "Installed"
+F 8 "CRCW06031K00FKEAC" H 7600 4850 50  0001 C CNN "MPN"
+F 9 "Vishay" H 7600 4850 50  0001 C CNN "Manufacturer"
+	1    7600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor_SMD_0603:1K R9
+U 1 1 61C2A6A8
+P 7150 4850
+F 0 "R9" H 7220 4896 50  0000 L CNN
+F 1 "1K" V 7150 4800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7080 4850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/28705/mcx0x0xpro.pdf" H 7150 4850 50  0001 C CNN
+F 4 "1K 1% 100ppm 0603" H 7150 4850 50  0001 C CNN "Description"
+F 5 "1" H 7150 4850 50  0001 C CNN "Populate"
+F 6 "1" H 7150 4850 50  0001 C CNN "Generic"
+F 7 "NI" H 7150 4850 50  0001 C CNN "Installed"
+F 8 "CRCW06031K00FKEAC" H 7150 4850 50  0001 C CNN "MPN"
+F 9 "Vishay" H 7150 4850 50  0001 C CNN "Manufacturer"
+	1    7150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5000 7150 5100
+Wire Wire Line
+	7150 5400 7150 5700
+Wire Wire Line
+	7600 5100 7600 5000
+Text Label 7400 4700 2    50   ~ 0
+3.3V
+Wire Wire Line
+	6550 4250 6750 4250
+Wire Wire Line
+	6750 4250 6750 5700
+Wire Wire Line
+	6750 5700 7150 5700
+Wire Wire Line
+	7600 5400 7600 5800
+Wire Wire Line
+	6550 4350 6550 5800
+Wire Wire Line
+	7150 4700 7600 4700
+Wire Wire Line
+	6550 5800 7600 5800
+Text Notes 6850 5150 0    50   ~ 0
+RX_LED
+Text Notes 7300 5150 0    50   ~ 0
+TX_LED
+Text HLabel 6950 3550 2    50   Output ~ 0
+UART_TX
+Text HLabel 6950 3450 2    50   Input ~ 0
+UART_RX
+Text HLabel 6950 3250 2    50   Input ~ 0
+UART_CTS
+Text HLabel 6950 3350 2    50   Output ~ 0
+UART_RTS
+Text HLabel 6950 3650 2    50   Input ~ 0
+UART_DSR
+Text HLabel 6950 3750 2    50   Output ~ 0
+UART_DTR
+Wire Wire Line
+	6550 3750 6950 3750
+Wire Wire Line
+	6550 3650 6950 3650
+Wire Wire Line
+	6550 3550 6950 3550
+Wire Wire Line
+	6550 3450 6950 3450
+Wire Wire Line
+	6550 3350 6950 3350
+Wire Wire Line
+	6550 3250 6950 3250
+Text Notes 600  700  0    50   ~ 0
+Use VUSB to power the IC, if the USB is not connected, the IC is off to reduce power consumption when standalone\n
+NoConn ~ 5100 3450
+NoConn ~ 5100 3550
+NoConn ~ 6550 3150
+NoConn ~ 6550 4050
+NoConn ~ 6550 4150
+NoConn ~ 6550 3850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 620FAF77
+P 5850 2350
+F 0 "#FLG0101" H 5850 2425 50  0001 C CNN
+F 1 "PWR_FLAG" H 5850 2523 50  0000 C CNN
+F 2 "" H 5850 2350 50  0001 C CNN
+F 3 "~" H 5850 2350 50  0001 C CNN
+	1    5850 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 2350
 $EndSCHEMATC
