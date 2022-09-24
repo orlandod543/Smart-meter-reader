@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name piezo_amplifier-rescue)(type Legacy)(uri /home/orlando/workspace/git/PiezoSaurus/piezo_amplifier/piezo_amplifier-rescue.lib)(options "")(descr ""))
+  (lib (name "piezo_amplifier-rescue")(type "Legacy")(uri "/home/orlando/workspace/git/PiezoSaurus/piezo_amplifier/piezo_amplifier-rescue.lib")(options "")(descr ""))
+  (lib (name "smartmeterreader-rescue")(type "Legacy")(uri "${KIPRJMOD}/smartmeterreader-rescue.lib")(options "")(descr ""))
 )

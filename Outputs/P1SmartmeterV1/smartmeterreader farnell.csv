@@ -1,0 +1,25 @@
+Part Number,Quantity,Description
+10uF,3,10uF 10% 35V X5R 0805
+100nF,3,100nF 10% 50V X7R 0603
+4.7uF,2,4.7uF 10% 35V X5R 0805
+4.7nF_250V,1,4.7nF 10% 250V X7R 0805
+1uF,1,1uF 10% 35V X7R 0603
+PMEG2010ER,2,"20V, 1A low Vf,  Schottky barrier rectifier, SOD-123W"
+RCLAMP0504S,2,"Low Capacitance TVS Diode Array, 3.3V Standoff, 4 Channels, SOT-23"
+Green,4,LED Green 20mA 2V
+1A,2,"Fuse, SMD, 1 A, 32 V, Slow Blow, 1206"
+USB_B_Micro_RA,1,"Micro USB 2.0, Input Output Connectors, B TYPE RECEPTACLE"
+RJ12,1,"Modular Connector, Modular Jack, 1 x 1 (Port), 6P6C, Cat3, Through Hole Mount"
+Jumper_3_ways,2,"Pin Header,2.54mm, 3 ways, vertical, THT"
+2N7002NXBK,4,60V 5.5A 104mOhm
+PMV75UP,2,"20Vds, -3.2A Id,  P-channel, 1 mOhm@-1.8Vgs Ron, SOT-23"
+10K,10,10K 1% 100ppm 0603
+1K,6,1K 1% 100ppm 0603
+100R,3,100R 1% 100ppm 0603
+15K,1,15K 1% 100ppm 0603
+1M,1,1M 1% 100ppm 0603
+SPST_NO,2,"SWITCH TACTILE SPST-NO,  0.05A 32V, silver contact, low current, no ground pin"
+ESP-12F,1,WiFi Development Tools - 802.11 ESP8266 SMT Module - ESP-12F
+CP2102N-A02-GQFN24,1,"USB to UART master bridge, QFN-24"
+MCP1824S-3V3,1,"300 mA,200mV dropout, 3.3V, SOT-223-3, Low Voltage, Low Quiescent Current LDO Regulator"
+DHT22,1,Humidity Temperature Sensor 0 ~ 100% RH Digital ±2% 2 s Through Hole
