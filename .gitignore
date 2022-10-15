@@ -7,3 +7,4 @@ _autosave*
 -cache*
 *-cache*
 *.kicad_pcb-bak
+*.zip
