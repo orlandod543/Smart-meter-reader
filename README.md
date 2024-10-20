@@ -11,8 +11,11 @@ This is a P1 reader board that I built to measure electricity and gas from smart
 
 Additionally, the board includes an optional **DHT22 sensor** to monitor the temperature and humidity inside your electrical cabinet.
 
+At the moment an example of the script to be used is not in this repository. Please go to https://esphome.io/components/sensor/dsmr.html for more details on how to create it. 
+
 ## **Getting Started**
 - Assemble the PCB using the provided schematics.
+- Create a ESPHome script following the instructions here: https://esphome.io/components/sensor/dsmr.html
 - Flash the ESPHome firmware with your network details.
 - Integrate with Home Assistant or any other compatible home automation platform.
 
