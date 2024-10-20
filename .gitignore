@@ -8,3 +8,4 @@ _autosave*
 *-cache*
 *.kicad_pcb-bak
 *.zip
+*.lck
